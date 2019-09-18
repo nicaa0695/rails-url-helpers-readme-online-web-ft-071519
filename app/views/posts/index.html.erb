@@ -2,3 +2,6 @@
   <div><a href='<%= "/posts/#{post.id}" %>'><%= post.title %></a></div>
 <% end %>
 
+<% @posts.each do |post| %>
+  <div><%= link_to post.title, "/posts/#{post.id}" %></div>
+<% end %>
